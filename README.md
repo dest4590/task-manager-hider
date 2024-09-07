@@ -2,9 +2,12 @@
 
 DLL that can hide arbitrary processes/programs from Windows Task Manager by performing IAT hooking on NtQuerySystemInformation.
 
-### Usage
+## Usage
+* Create file temp.txt in your user folder
+* Inject dll to task manager or processhacker
+* Done!
 
-Inject the DLL using any method (e.g LoadLibrary) into (64 bit) Task Manager. Specify the process to be hidden. 
-[Video demo](https://youtu.be/dl-Sqp9_em8). For 32 bit systems, compile the DLL in 32 bit.
+### Showcase:
+<img src="https://i.imgur.com/BIdLNfz.mp4" width=600>
 
-Hiding multiple different processes could be easily achieved by modifying the name checks when looping through the SystemProcessInformation linked list.
+> Based on: https://github.com/thebowenfeng/task-manager-hider
